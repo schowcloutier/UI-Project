@@ -1,0 +1,70 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family:'Raleway', sans-serif;
+    color: #777;
+}
+
+/* Header part */
+.container {
+    max-width: 100%;
+    border-radius: 4px;
+    background-color: rbg(255,255,255);
+}
+#nav {
+    height: 150px; 
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#nav ul {
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 10px;
+}
+#nav li {
+    float: left;
+    width: 20%;
+}
+#nav li:hover a::before {
+    right: 0;
+    left: 0;
+}
+#nav a {
+    color: #848484;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 0;
+    display: block;
+    position: relative;
+    transition: all 0.3s ease;
+}
+#nav a:hover {
+    color: #e74c3c;
+}
+#nav a::before {
+    content: "";
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    bottom: 0;
+    height: 2px;
+    background-color: #e74c3c;
+}
+#nav a:hover::before {
+    right: 0;
+    left: 0;
+} 
+li {
+    list-style: none;
+}
+.dog_logo {
+    height: 160px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+/* */
