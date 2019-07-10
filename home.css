@@ -11,6 +11,62 @@ body, html {
     border-radius: 4px;
     background-color: rbg(255,255,255);
 }
+#dogs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_welcome{
+    height: 200px;
+    width: 260px;
+    background-image: url("images/headerdog_welcome_pose1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.header_welcome:hover {
+    background-image: url("images/headerdog_welcome_pose2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+.header_dog_1 {
+    height: 200px;
+    width: 200px;
+    background-image: url("images/headerdog1_pose1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    margin-top: 30px;
+}
+.header_dog_1:hover {
+    background-image: url("images/headerdog1_pose2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header_dog_2 {
+    height: 200px;
+    width: 200px;
+    background-image: url("images/headerdog2_pose1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.header_dog_2:hover {
+    background-image: url("images/headerdog2_pose2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {
+    text-align: center;
+    margin: 20px;
+}
 #nav {
     height: 150px; 
     padding-left: 50px;
@@ -59,12 +115,7 @@ body, html {
 li {
     list-style: none;
 }
-.dog_logo {
-    height: 160px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-}
+
+ 
 
 /* */
