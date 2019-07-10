@@ -18,7 +18,7 @@ body, html {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: 100%;
-    min-height: 100%;
+    max-height: 60%;
     background-image: url("images/gosh.png");
   }
 
@@ -27,23 +27,19 @@ body, html {
     align-items: center;
     justify-content: center;
 }
-
 .header_welcome{
-    height: 200px;
-    width: 260px;
+    height: 400px;
+    width: 360px;
     background-image: url("images/headerdog_welcome_pose1.png");
     background-repeat: no-repeat;
     background-size: contain;
-    display: inline-block;
-    margin-top: 20px;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-top: 50px;
 }
+
 .header_welcome:hover {
     background-image: url("images/headerdog_welcome_pose2.png");
     background-repeat: no-repeat;
     background-size: contain;
-
 }
 .header_dog_1 {
     height: 200px;
@@ -132,19 +128,18 @@ li {
 
 /* Header done */
 
-h1 {
-    margin-top: 60px;
-    font-size: 50px;
-}
+
 .tofuchan {
-    height: 200px;
-    display: inline-block;
-    margin-left: 10%;
-    padding-top: 10px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+
 }
 
 .slogan {
-    width: 50%;
+    width: 500px;
     padding-left: 70px;
     padding-right: 70px;
     background-color: rgb(255,255,255);
