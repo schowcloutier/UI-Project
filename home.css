@@ -11,7 +11,19 @@ body, html {
     border-radius: 4px;
     background-color: rbg(255,255,255);
 }
-
+#dogs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header_pic {
+    height: 80px;
+    width: 500px;
+    margin-top: 10px;
+    background-image: url("images/header.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 .parallax-1{
     position: relative;
     background-attachment: fixed;
@@ -21,71 +33,21 @@ body, html {
     max-height: 60%;
     background-image: url("images/gosh.png");
   }
-
-#dogs {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.header_welcome{
-    height: 400px;
-    width: 360px;
-    background-image: url("images/headerdog_welcome_pose1.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-top: 50px;
-}
-
-.header_welcome:hover {
-    background-image: url("images/headerdog_welcome_pose2.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-.header_dog_1 {
-    height: 200px;
-    width: 200px;
-    background-image: url("images/headerdog1_pose1.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: inline-block;
-    margin-top: 10px;
-}
-.header_dog_1:hover {
-    background-image: url("images/headerdog1_pose2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.header_dog_2 {
-    height: 200px;
-    width: 200px;
-    background-image: url("images/headerdog2_pose1.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: inline-block;
-    margin-top: 10px;
-}
-
-.header_dog_2:hover {
-    background-image: url("images/headerdog2_pose2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 h1 {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 50px;
 }
 #nav {
-    height: 80px; 
+    height: 60px; 
     padding-left: 50px;
     padding-right: 50px;
     background-color: rgb(255,255,255);
-
 }
 #nav ul {
     border-radius: 4px;
     overflow: hidden;
-    padding: 10px;
+
 }
 #nav li {
     float: left;
@@ -128,14 +90,47 @@ li {
 
 /* Header done */
 
+.header_welcome{
+    height: 400px;
+    width: 360px;
+    background-image: url("images/headerdog_welcome_pose1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 50px;
+}
+.header_welcome:hover {
+    background-image: url("images/headerdog_welcome_pose2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.header_dog_1 {
+    height: 200px;
+    width: 200px;
+    background-image: url("images/headerdog1_pose1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    margin-top: 10px;
+}
+.header_dog_1:hover {
+    background-image: url("images/headerdog1_pose2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header_dog_2 {
+    height: 200px;
+    width: 200px;
+    background-image: url("images/headerdog2_pose1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    margin-top: 10px;
+}
 
-.tofuchan {
-    height: 300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 40px;
-
+.header_dog_2:hover {
+    background-image: url("images/headerdog2_pose2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .slogan {
