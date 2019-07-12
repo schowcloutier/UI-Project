@@ -1,0 +1,154 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family:'DM sans', sans-serif;
+    color: #777;
+}
+
+/* Header part */
+.container {
+    max-width: 100%;
+    border-radius: 4px;
+    background-color: rbg(255,255,255);
+}
+.header_pic {
+    height: 80px;
+    width: 500px;
+    margin-top: 10px;
+    background-image: url("images/header.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#dogs {
+    display: flex;
+    justify-content: center;
+}
+.parallax-1 {
+    position: relative;
+    background-attachment: fixed;
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70%;
+    background-image: url("images/FullSizeRender.png")
+  }
+
+.head_text {
+    width: 500px;
+    display: block;
+    margin-right: auto;
+    margin-left:auto;
+    padding-top: 110px;
+}
+.head_text h1 {
+    color: white;
+}
+.bigger {
+    font-size: 20px;
+    color: white;
+}
+.smaller {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+#nav {
+    height: 60px; 
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: rgb(255,255,255);
+}
+#nav ul {
+    border-radius: 4px;
+    overflow: hidden;
+
+}
+#nav li {
+    float: left;
+    width: 20%;
+}
+#nav li:hover a::before {
+    right: 0;
+    left: 0;
+}
+#nav a {
+    color: #848484;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 0;
+    display: block;
+    position: relative;
+    transition: all 0.3s ease;
+}
+#nav a:hover {
+    color:  #e19d36;
+}
+#nav a::before {
+    content: "";
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    bottom: 0;
+    height: 2px;
+    background-color: #e19d36;
+}
+#nav a:hover::before {
+    right: 0;
+    left: 0;
+} 
+li {
+    list-style: none;
+}
+
+/* Header done */
+
+
+/* gallery */
+
+div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
