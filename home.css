@@ -13,7 +13,6 @@ body, html {
 }
 #dogs {
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 .header_pic {
@@ -33,10 +32,23 @@ body, html {
     max-height: 60%;
     background-image: url("images/gosh.png");
   }
-h1 {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 50px;
+
+.head_text {
+    width: 500px;
+    margin-right: 30px;
+    margin-top: 50px;
+}
+.head_text h1 {
+    color: white;
+}
+.head_text p {
+    color: white;
+}
+.bigger {
+    font-size: 20px;
+}
+.smaller {
+    font-size: 18px;
 }
 #nav {
     height: 60px; 
@@ -90,6 +102,9 @@ li {
 
 /* Header done */
 
+#showcase {
+    background-color:  rgba(238, 238, 238, 0.317);
+}
 .header_welcome{
     height: 400px;
     width: 360px;
@@ -104,13 +119,13 @@ li {
     background-size: contain;
 }
 .header_dog_1 {
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     background-image: url("images/headerdog1_pose1.png");
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 40px;
 }
 .header_dog_1:hover {
     background-image: url("images/headerdog1_pose2.png");
@@ -118,31 +133,41 @@ li {
     background-size: cover;
 }
 .header_dog_2 {
-    height: 200px;
-    width: 200px;
+    height: 230px;
+    width: 230px;
     background-image: url("images/headerdog2_pose1.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 40px;
 }
-
 .header_dog_2:hover {
     background-image: url("images/headerdog2_pose2.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.textcontain {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
 .slogan {
     width: 500px;
-    padding-left: 70px;
-    padding-right: 70px;
+    margin-top: 60px;
+    margin-right: 5%;
+    margin-left: 5%;
     background-color: rgb(255,255,255);
     display: inline-block;
 }
-
 .slogan p {
     line-height: 35px;
     font-size: 18px;
 }
 
+/* footer */
+.footer {
+    background-color: rgb(171, 171, 171);
+}
