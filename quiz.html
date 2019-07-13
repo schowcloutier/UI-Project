@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="author" content="Qurt ul ain Sultan, Dounia Mansouri & Sacha Chow-Cloutier">
+		<title>Quizzes Page</title>
+		<link rel="stylesheet" href="quizzes.css">
+		<link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+	</head>
+	
+	<body>
+		<header>
+		
+		<div class="container">
+			<div id="dogs">
+				<div class="header_pic"></div>
+			</div>
+			<div id="nav">
+					<ul>
+						<li><a href="./home.html"><span>Home</span></a></li>
+						<li><a href="./dog_types.html"><span>Dog Types</span></a></li>
+						<li><a href="./care.html"><span>Taking Care</span></a></li>
+						<li><a href="./quizzes.html"><span>Quizzes</span></a></li>
+						<li><a href="./adopt.html"><span>Adopt</span></a></li>
+					</ul>
+			</div>
+		</div>
+
+		</header>
+		
+		
+		<div class="parallax-1">
+			<div id="quizzes">
+				<div class="space"></div>
+			</div>
+		</div>
+		
+		
+		
+		<h1>What Kind Of Dog Are You?</h1>
+		<p>Do you ever wonder what kind of dog breed you'd be if you were a dog? Take this quiz and find out!</p>
+		
+		
+		<section id="showcase">
+			<div class="textcontain">
+
+			<div class="info">
+				
+				<h3>1. Which house would you rather live in?</h3>
+					<input type="radio" id="mc">Mansion</br>
+					<input type="radio" id="mc">Villa</br>
+					<input type="radio" id="mc">Ranch</br>
+					<input type="radio" id="mc">Tree House</br>
+					<input type="radio" id="mc">Igloo</br>
+					<input type="radio" id="mc">Beach House</br>
+				
+				<h3>2. What are you looking for in a best friend?</h3>
+					<input type="radio" id="mc">Someone who always has a snack in hand</br>
+					<input type="radio" id="mc">Someone who protects me and comforts me when I need it</br>
+					<input type="radio" id="mc">Someone who can be athletic and to go on adventures with</br>
+					<input type="radio" id="mc">Someone to do everything with together</br>
+					<input type="radio" id="mc">Someone who is loyal but knows to give you space when you need it</br>
+				
+				<h3>3. If you could visit any time in history, which would you like to visit?</h3>
+					<input type="radio" id="mc">Victorian Era</br>
+					<input type="radio" id="mc">La Belle Epoque</br>
+					<input type="radio" id="mc">Egyptian Pyramid Building Era</br>
+					<input type="radio" id="mc">Discovery of America</br>
+					<input type="radio" id="mc">Roman Empire or Ancient Greece</br>
+					<input type="radio" id="mc">1920s Gangsters and Bootleggers</br>
+				
+				<!--
+				<h3>4. It's Saturday morning. What are you doing?</h3>
+					<input type="radio" id="mc">Sleeping in</br>
+					<input type="radio" id="mc">Getting my hair cut</br>
+					<input type="radio" id="mc">Looking for a cute outfit</br>
+					<input type="radio" id="mc">Running errands</br>
+					<input type="radio" id="mc">Doing something active</br>
+					<input type="radio" id="mc">Working or studying</br>
+				
+				
+				<h3>5. How would you describe your personal hair maintenance?</h3>
+					<input type="radio" id="mc">I spend hours getting my hair ready every morning</br>
+					<input type="radio" id="mc">I just do what I have to do</br>
+					<input type="radio" id="mc">I really don't care about my hair</br>
+				
+				<h3>6. How would your friends describe you?</h3>
+					<input type="radio" id="mc">Great sense of humour</br>
+					<input type="radio" id="mc">Someone shy</br>
+					<input type="radio" id="mc">Kind and helpful</br>
+					<input type="radio" id="mc">Loyal</br>
+					<input type="radio" id="mc">Smart</br>
+					<input type="radio" id="mc">Clingy</br>
+					
+				<h3>7. If you could have any other job, what would you want?</h3>
+					<input type="radio" id="mc">Open my own business</br>
+					<input type="radio" id="mc">Actor or actress</br>
+					<input type="radio" id="mc">Software engineer</br>
+					<input type="radio" id="mc">Professional athlete</br>
+					<input type="radio" id="mc">Doctor</br>
+					<input type="radio" id="mc">Join the armed forces</br>
+					-->
+					<button href="#" id="results" class="results">Check Results</button>
+				
+			</div>
+			</div>
+		</section>
+		
+		
+		<!-- Popup Section -->
+		<div class="bg-modal">
+			<div class="modal-content">
+			
+				<div id="close" class="close">+</div>
+				<img src="./images/headerdog1_pose2.png" alt="">
+				
+				
+				<h1>Poodle</h1>
+				
+				<p>It's not your fault you're gorgeous, smart, and well-disciplined!</p>
+				<p>You like to excel at what you do, and you're proud of that fact. People may think your pride makes you a snob, but that's far from the fact. </p>
+				<p>You love people, but it takes you a while to warm up to strangers.</p>
+				
+				<button class="button" onclick="location.href='./quizzes.html'">Return to Quizzes</button>
+				
+			</div>
+		</div>
+		
+		
+		<footer>
+			<!-- insert about us section and links to share here -->
+			<ul>
+				<li><a href="./about_us.html">About Us</a></li>
+			</ul>
+			<p>Copyright &copy; 2019</p>
+		</footer>
+		
+		<script>
+		
+		document.getElementById('results').addEventListener('click', function() {
+			document.querySelector('.bg-modal').style.display = 'flex';
+		});
+		
+		document.querySelector('.close').addEventListener('click', function(){
+			document.querySelector('.bg-modal').style.display = 'none';
+		});
+
+		</script>
+		
+	</body>
+	
+</html>
