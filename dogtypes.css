@@ -132,7 +132,7 @@ div.gallery_top{
 }
 div.gallery_rowstart {
     margin: 10px;
-    margin-left:90px;
+    margin-left:80px;
     border: 4px solid white;
     float: left;
     width: 250px;
@@ -141,7 +141,7 @@ div.gallery_rowstart {
 div.gallery_rowstart_top {
     margin: 10px;
     margin-top: 50px;
-    margin-left:90px;
+    margin-left:80px;
     border: 4px solid white;
     float: left;
     width: 250px;
@@ -168,4 +168,52 @@ div.gallery_rowstart_top {
     background-size: cover;
     margin-bottom: 10px;
     border-radius: 4px;
+}
+
+
+.afghan-hound-modal, .basset-hound-modal, .beagle-modal, .bloodhound-modal, .border-collie-modal, .boston-terrier-modal,
+.bulldog-modal, .chihuahua-modal, .dachshund-modal, .dalmatian-modal, .golden-retriever-modal, .greyhound-modal,
+.maltese-modal, .pekingnese-modal, .poodle-modal, .shih-tzu-modal{
+	width:100%;
+	height:321%;
+	background-color: rgba(0, 0, 0, 0.42);
+	position: absolute;
+	top:0;
+	justify-content:center;
+	align-items:center;
+	display: none;
+	
+}
+.modal-content{
+	width:500px;
+	height:730px;
+	background-color:white;
+	opacity:1;
+	border-radius:10px;
+	text-align:left;
+	padding: 20px;
+	position:relative;
+}
+
+.modal-content h1 {
+    color: #e19d36;
+}
+
+.modal-content h3 {
+    color: #afd146;
+}
+
+.afghan-close, .basset-close, .beagle-close, .bloodhound-close, .border-collie-close, .boston-terrier-close, .bulldog-close,
+.chihuahua-close, .dachshund-close, .dalmatian-close, .golden-retriever-close, .greyhound-close, .maltese-close,
+.pekingnese-close, .poodle-close, .shih-tzu-close {
+	position:absolute;
+	top:0;
+	right:14px;
+	font-size:42px;
+	transform: rotate(45deg);
+	cursor: pointer;
+}
+
+.results {
+	margin-left:500px;
 }
