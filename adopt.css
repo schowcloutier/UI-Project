@@ -321,30 +321,29 @@ li {
 
 
 
-/* footer  source: https://stackoverflow.com/questions/39250134/how-do-i-put-my-image-inside-my-footer-tag  */
-.footer{
-    background-color:#777;
-    margin:0;
-    padding:0;
-    overflow:auto;
-    margin-top: 90px;
- }
+/* footer */
 
- .footerP {
-     color: black;
-     font-family:'DM sans', sans-serif;
- }
-
- .footerP2 {
-    font-family:'DM sans', sans-serif;
-
-    color: black;
-    margin-left: 40%;
+#foot {
+  height: 60px; 
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: rgb(255,255,255);
+  margin-left: 20%;
 
 }
+#foot ul {
+  border-radius: 4px;
+  overflow: hidden;
+}
+#foot li {
+  float: left;
+  width: 20%;
+}
 
- .facebook {
-     border-radius: 50%;
-     width: 50px;
-     margin-left:30%;
- }
+#foot a {
+text-decoration: none;
+color: #afd146;
+}
+#foot a:hover {
+color:  #e19d36;
+}

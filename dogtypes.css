@@ -103,7 +103,7 @@ li {
 
 /* gallery */
 #showcase {
-    background-color:  rgba(238, 238, 238, 0.317);
+    background-color:  rgb(255, 255, 255);
     min-height: 100%;
 }
 .textcontain {
@@ -238,10 +238,10 @@ div.gallery_rowstart_top {
     width: 20%;
 }
 
-a {
+#foot a {
 	text-decoration: none;
 	color: #afd146;
 }
-a:hover {
-	color: black;
+#foot a:hover {
+	color:  #e19d36;
 }

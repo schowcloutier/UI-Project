@@ -225,3 +225,30 @@ button:hover{
 .results {
 	margin-left:500px;
 }
+
+/* footer */
+
+#foot {
+    height: 60px; 
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: rgb(255,255,255);
+    margin-left: 20%;
+  
+  }
+  #foot ul {
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  #foot li {
+    float: left;
+    width: 20%;
+  }
+  
+  #foot a {
+  text-decoration: none;
+  color: #afd146;
+  }
+  #foot a:hover {
+  color:  #e19d36;
+  }
