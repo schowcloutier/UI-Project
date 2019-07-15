@@ -42,7 +42,7 @@ body, html {
     background-repeat: no-repeat;
     background-size: 100%;
     min-height: 70%;
-    background-image: url("./quiz.jpg")
+    background-image: url("images/quiz.jpg")
   }
 .head_text {
     width: 500px;
