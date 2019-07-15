@@ -216,6 +216,7 @@ button{
 	text-decoration: none;
 	display: inline-block;
 	font-size: 18px;
+	margin-bottom: 20px;
 }
 button:hover{
 	border-color: #e19d36;
