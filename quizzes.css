@@ -29,6 +29,44 @@ body, html {
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+
+#dogs {
+    display: flex;
+    justify-content: center;
+}
+.parallax-2 {
+    position: relative;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 70%;
+    background-image: url("./quiz.jpg")
+  }
+.head_text {
+    width: 500px;
+    margin-right: auto;
+    margin-left:auto;
+    padding-top: 110px;
+}
+.head_text h1 {
+    color: white;
+    text-align: left;
+}
+.head_text p {
+    text-align: left;
+}
+.bigger {
+    font-size: 20px;
+    color: white;
+}
+.smaller {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+
 .parallax-1{
     position: relative;
     background-attachment: fixed;
