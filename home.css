@@ -69,7 +69,7 @@ body, html {
     right: 0;
     left: 0;
 }
-#nav a {
+#nav .inactive a {
     color: #848484;
     font-size: 16px;
     text-decoration: none;
@@ -79,6 +79,17 @@ body, html {
     position: relative;
     transition: all 0.3s ease;
 }
+#nav .active a {
+    color: #afd146;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 0;
+    display: block;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
 #nav a:hover {
     color:  #e19d36;
 }

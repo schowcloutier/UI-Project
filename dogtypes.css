@@ -9,7 +9,7 @@ body, html {
 .container {
     max-width: 100%;
     border-radius: 4px;
-    background-color: rbg(255,255,255);
+    background-color: rgb(255,255,255);
 }
 .header_pic {
     height: 80px;
@@ -29,14 +29,14 @@ body, html {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: 100%;
-    min-height: 70%;
+    min-height: 60%;
     background-image: url("images/FullSizeRender.png")
   }
 .head_text {
     width: 500px;
     margin-right: auto;
     margin-left:auto;
-    padding-top: 110px;
+    padding-top: 90px;
 }
 .head_text h1 {
     color: white;
@@ -67,8 +67,18 @@ body, html {
     right: 0;
     left: 0;
 }
-#nav a {
+#nav .inactive a {
     color: #848484;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 0;
+    display: block;
+    position: relative;
+    transition: all 0.3s ease;
+}
+#nav .active a {
+    color: #afd146;
     font-size: 16px;
     text-decoration: none;
     text-align: center;
