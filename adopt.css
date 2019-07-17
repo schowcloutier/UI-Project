@@ -147,11 +147,15 @@ li {
   
 
 
-/* Text and  images */
+/* Text and  images. https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_lightbox */
 
 .image-dog-tales {
-  margin-left: 30%;
-  margin-top: 2%;
+  margin-left: 43%;
+  margin-top: 5%; 
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  width: 200px;
+
+  border: 2px solid #848484;
 }
 
   .text1 {
@@ -209,13 +213,14 @@ li {
     color: #e19d36;
   }
 
-  .rounded-image2 {
-    border-radius: 50%;
+  .image-petfinder {
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     width: 200px;
+    margin-left: 43%;
+    border: 2px solid #848484;
 
+    
     margin-top: 10%;
-    margin-right: 6%;
     
   }
 
@@ -226,8 +231,8 @@ li {
     padding: 20px; 
     width: 60%;
     height: 100px;
-    margin-left: 13%;
-    margin-top: 10%;
+    margin-left: 22%;
+    margin-top: 6%;
     font-family:'DM sans', sans-serif;
     color: #777;
     font-size: 30px; 
@@ -248,18 +253,21 @@ li {
     padding: 20px; 
     width: 50%;
     height: 100px;
-    margin-left: 15%;
+    margin-left: 22%;
     margin-top: 0%;
     font-family:'DM sans', sans-serif;
 
   }
 
-  .rounded-image3 {
-    border-radius: 50%;
+  .image-ottawa{
+    
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     width: 200px;
+    margin-left: 43%;
+    border: 2px solid #848484;
+
+    
     margin-top: 10%;
-    margin-left: 6%;
     
   }
 
@@ -270,7 +278,8 @@ li {
     padding: 20px; 
     width: 60%;
     height: 100px;
-    margin-left: 35%;
+    margin-left: 22%;
+    margin-top: 6%;
    
     font-family:'DM sans', sans-serif;
     color: #777;
@@ -292,19 +301,21 @@ li {
     padding: 20px; 
     width: 50%;
     height: 100px;
-    margin-left: 35%;
+    margin-left: 22%;
     margin-top: 0%;
     font-family:'DM sans', sans-serif;
 
   }
 
 
-  .rounded-image4 {
-    border-radius: 50%;
+  .image-mary {
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     width: 200px;
+    margin-left: 43%;
+    border: 2px solid #848484;
+
+    
     margin-top: 10%;
-    margin-left: 6%;
     
   }
 
@@ -315,8 +326,8 @@ li {
     padding: 20px; 
     width: 60%;
     height: 100px;
-    margin-left: 13%;
-    margin-top: 10%;
+    margin-left: 22%;
+    margin-top: 6%;
 
     font-family:'DM sans', sans-serif;
     color: #777;
@@ -338,7 +349,7 @@ li {
     padding: 20px; 
     width: 50%;
     height: 100px;
-    margin-left: 13%;
+    margin-left: 22%;
     margin-top: 0%;
     font-family:'DM sans', sans-serif;
 
@@ -354,6 +365,7 @@ li {
   padding-right: 50px;
   background-color: rgb(255,255,255);
   margin-left: 20%;
+  margin-top: 10%;
 
 }
 #foot ul {
