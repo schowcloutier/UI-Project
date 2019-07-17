@@ -38,24 +38,82 @@
 				  
 				</div>
 		</div>
-		
-		<!-- subtitle -->
-		<div class = "image1"> 
-				<img src="./images/aussie.jpg" class = "rounded-image1" align = "left" id = "myImg" alt= "Australian Sheperd">
-		</div>
 
-		<!-- The Modal -->
-		<div id="myModal" class="modal">
-			<span class="close">&times;</span>
-			<img class="modal-content" id="img01">
-			<div id="caption"></div>
-	  	</div>
+			<!-- subtitle -->
+
+			<div class="row">
+					<div class="column">
+					  <img src="./images/dog.jpg" style="width:100%"  onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+					</div>
+					<div class="column">
+					  <img src="./images/dog3.jpeg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+					</div>
+					<div class="column">
+					  <img src="./images/dog1.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+					</div>
+					<div class="column">
+					  <img src="./images/dog2.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+					</div>
+			</div>
+				  
+			<div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div class="modal-content">
+				  
+					  <div class="mySlides">
+						<div class="numbertext">1 / 4</div>
+						<img src="./images/dog.jpg" style="width:100%">
+					  </div>
+				  
+					  <div class="mySlides">
+						<div class="numbertext">2 / 4</div>
+						<img src="./images/dog3.jpeg" style="width:100%">
+					  </div>
+				  
+					  <div class="mySlides">
+						<div class="numbertext">3 / 4</div>
+						<img src="./images/dog1.jpg" style="width:100%">
+					  </div>
+					  
+					  <div class="mySlides">
+						<div class="numbertext">4 / 4</div>
+						<img src="./images/dog2.jpg" style="width:100%">
+					  </div>
+					  
+					  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+				  
+					  <div class="caption-container">
+						<p id="caption"></p>
+					  </div>
+				  
+				  
+					  <div class="column">
+						<img class="demo cursor" src="./images/dog.jpg" style="width:100%" onclick="currentSlide(1)" alt="Golden Retriever">
+					  </div>
+					  <div class="column">
+						<img class="demo cursor" src="./images/dog3.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Golden Retriever">
+					  </div>
+					  <div class="column">
+						<img class="demo cursor" src="./images/dog1.jpg" style="width:100%" onclick="currentSlide(3)" alt="Samoyède">
+					  </div>
+					  <div class="column">
+						<img class="demo cursor" src="./images/dog2.jpg" style="width:100%" onclick="currentSlide(4)" alt="Golden Retriever">
+					  </div>
+					</div>
+				  </div>
+
+
+
+		
+		
+	
 
 		<button class = "text1" >Feeding</button>
 
 		<div class = "content1">
 				
-				<p>Puppies 8-12 weeks old need to be fed 4 meals a day. Meanwhile, puppies between 3-6 months old require 3 meals a day. A 6 month to 1 year old puppy needs 2 meals a day. Dogs over 1 year old, suffice from only 1 meal a day. Note that puppies should be fed a high-quality, brand-name puppy food. And premium-quality dry food provides a well-balanced diet for adult dogs.</p> 
+				<p>Puppies 8-12 weeks old need to be fed 4 meals a day. Meanwhile, puppies between 3-6 months old require 3 meals a day.</p> 
 		</div>
 
 		<button class = "text2">Exercice</button>
@@ -70,7 +128,7 @@
 
 		<div class = "content3">
 				
-				<p>Keep your dog clean and reduce shedding by brushing. Check for fleas and ticks daily during warm weather. Most dogs don't need to be bathed more than a few times a year. When bathing a dog, make sure to carefully rinse all soap out of the coat, or the dirt will stick to soap residue.</p>
+				<p>Keep your dog clean and reduce shedding by brushing. Check for fleas and ticks daily during warm weather. Most dogs don't need to be bathed more than a few times a year.</p>
 		</div>
 
 		<button class = "text4">Handling</button>
@@ -81,19 +139,26 @@
 				<p>To carry a puppy or small dog, place one hand under the dog's chest, with either your forearm or other hand supporting the hind legs and rump. Never attempt to lift or grab your puppy or small dog by the forelegs, tail or back of the neck. If you do have to lift a large dog, lift from the underside, supporting his chest with one arm and his rear end with the other.</p>
 		</div>
 
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+					<span class="close">&times;</span>
+					<img class="modal-content" id="img01">
+					<div id="caption"></div>
+			</div>
+
 		
 
 		
 		<footer>
-			<!-- insert about us section and links to share here -->
-			<footer class="footer">
-					<p class="footerP">© Petify ©</p>
-					<p class= "footerP2">Follow us in all our social media !</p>
-					<li class="socialMedias"> <img class="facebook" src="./images/facebook.png" href="https://www.facebook.com/axel.halldin1?fref=ts"/>
-					</li>
-			</footer>
-			
-			
+			<div id="foot">
+				<ul>
+					<li><a href="./about_us.html">About Us</a></li>
+					<li><a href="https://www.facebook.com/"><span>Facebook</span></a></li>
+					<li><a href="https://www.twitter.com/"><span>Twitter</span></a></li>
+					<li><a href="https://www.instagram.com/"><span>Instagram</span></a></li>
+					<!--<button>Search</button>-->
+				</ul>
+		</div>
 		</footer>
 		
 		<script>
@@ -159,26 +224,46 @@
 					});
 				}
 
-				// Get the modal
-				var modal = document.getElementById("myModal");
 
-				// Get the image and insert it inside the modal - use its "alt" text as a caption
-				var img = document.getElementById("myImg");
-				var modalImg = document.getElementById("img01");
-				var captionText = document.getElementById("caption");
-				img.onclick = function(){
-				modal.style.display = "block";
-				modalImg.src = this.src;
-				captionText.innerHTML = this.alt;
+				function openModal() {
+					document.getElementById("myModal").style.display = "block";
 				}
 
-				// Get the <span> element that closes the modal
-				var span = document.getElementsByClassName("close")[0];
+				function closeModal() {
+					document.getElementById("myModal").style.display = "none";
+				}
 
-				// When the user clicks on <span> (x), close the modal
-				span.onclick = function() { 
-				modal.style.display = "none";
-}
+				var slideIndex = 1;
+				showSlides(slideIndex);
+
+				function plusSlides(n) {
+					showSlides(slideIndex += n);
+				}
+
+				function currentSlide(n) {
+					showSlides(slideIndex = n);
+				}
+
+				function showSlides(n) {
+						var i;
+						var slides = document.getElementsByClassName("mySlides");
+						var dots = document.getElementsByClassName("demo");
+						var captionText = document.getElementById("caption");
+						if (n > slides.length) {slideIndex = 1}
+						if (n < 1) {slideIndex = slides.length}
+						for (i = 0; i < slides.length; i++) {
+							slides[i].style.display = "none";
+						}
+						for (i = 0; i < dots.length; i++) {
+							dots[i].className = dots[i].className.replace(" active", "");
+						}
+						slides[slideIndex-1].style.display = "block";
+						dots[slideIndex-1].className += " active";
+						captionText.innerHTML = dots[slideIndex-1].alt;
+				}
+
+				
+
 
 
 

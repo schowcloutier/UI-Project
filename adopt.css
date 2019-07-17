@@ -147,15 +147,12 @@ li {
   
 
 
-/* Text and rounded images */
-.rounded-image1 {
-    border-radius: 50%;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-    width: 200px;
-    margin-top: 6%;
-    margin-left: 6%;
-    
-  }
+/* Text and  images */
+
+.image-dog-tales {
+  margin-left: 30%;
+  margin-top: 2%;
+}
 
   .text1 {
 
@@ -164,7 +161,7 @@ li {
     padding: 20px; 
     width: 60%;
     height: 100px;
-    margin-left: 15%;
+    margin-left: 22%;
     margin-top: 6%;
     font-family:'DM sans', sans-serif;
     color: #777;
@@ -188,10 +185,28 @@ li {
     padding: 20px; 
     width: 50%;
     height: 100px;
-    margin-left: 35%;
+    margin-left: 22%;
     margin-top: 0%;
     font-family:'DM sans', sans-serif;
 
+  }
+
+  .btn1 {
+    margin-top: 30px;
+    background-color: white;
+    color: #848484;
+    border: 2px solid #848484;
+    border-radius: 10px;
+    padding: 10px 20px;
+  
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .btn1:hover{
+    border-color: #e19d36;
+    color: #e19d36;
   }
 
   .rounded-image2 {
@@ -221,7 +236,7 @@ li {
 
   }
 
-  .active, .text2:hover {
+  .text2:hover {
     background-color: rgb(211, 210, 210);
 
 
@@ -265,7 +280,7 @@ li {
 
   }
 
-  .active, .text3:hover {
+   .text3:hover {
     background-color: rgb(211, 210, 210);
 
 
@@ -311,7 +326,7 @@ li {
 
   }
 
-  .active, .text4:hover {
+   .text4:hover {
     background-color: rgb(211, 210, 210);
 
 
