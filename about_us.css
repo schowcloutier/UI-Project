@@ -1,3 +1,4 @@
+
 body, html {
     height: 100%;
     margin: 0;
@@ -21,7 +22,7 @@ body, html {
     height: 80px;
     width: 500px;
     margin-top: 10px;
-    background-image: url("images/header.png");
+    background-image: url("./images/header.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -33,7 +34,7 @@ body, html {
     background-repeat: no-repeat;
     background-size: 100%;
     min-height: 60%;
-    background-image: url("./about_doggy.jpg")
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/about_doggy.jpg")
   }
 .head_text {
     width: 500px;
@@ -195,5 +196,6 @@ li {
 #foot a:hover {
 	color: #e19d36;
 }
+
 
 /* Footer done */

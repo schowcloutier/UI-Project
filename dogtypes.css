@@ -29,14 +29,14 @@ body, html {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: 100%;
-    min-height: 60%;
+    min-height: 70%;
     background-image: url("images/FullSizeRender.png")
   }
 .head_text {
     width: 500px;
     margin-right: auto;
     margin-left:auto;
-    padding-top: 90px;
+    padding-top: 100px;
 }
 .head_text h1 {
     color: white;
@@ -121,7 +121,7 @@ li {
     background-color: white;
     max-width: 95%;
     height: 1400px;
-    margin-left: auto;
+    margin-left: 100px;
     margin-right: auto;
 }
 div.gallery {
@@ -196,7 +196,7 @@ div.gallery_rowstart_top {
 }
 .modal-content{
 	width:500px;
-	height:730px;
+	height:780px;
 	background-color:white;
 	opacity:1;
 	border-radius:10px;

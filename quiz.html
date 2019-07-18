@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 
+<!-- This is the Quiz page implementation which includes a short multiple choice quiz. -->
+
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -11,100 +13,71 @@
 	</head>
 	
 	<body>
+		<!-- Header Section -->
 		<header>
-		
-		<div class="container">
-			<div id="dogs">
-				<div class="header_pic"></div>
-			</div>
-			<div id="nav">
+			<div class="container">
+				<div id="quiz">
+					<div class="header_pic"></div>
+				</div>
+				<!-- Navigation Section -->
+				<div id="nav">
 					<ul>
 						<li class="inactive"><a href="./home.html"><span>Home</span></a></li>
-						<li class="inactive"><a href="./dog_types.html"><span>Dog Types</span></a></li>
+						<li class="active"><a href="./dog_types.html"><span>Dog Types</span></a></li>
 						<li class="inactive"><a href="./care.html"><span>Taking Care</span></a></li>
-						<li class="active"><a href="./quizzes.html"><span>Quizzes</span></a></li>
+						<li class="inactive"><a href="./quizzes.html"><span>Quizzes</span></a></li>
 						<li class="inactive"><a href="./adopt.html"><span>Adopt</span></a></li>
+						<!--<button>Search</button>-->
 					</ul>
+				</div>
 			</div>
-		</div>
-
 		</header>
 		
-		
-		<div class="parallax-1">
-			<div id="quizzes">
+		<!-- Include space to separate nav bar from rest of page. -->
+		<div class="parallax-quiz">
+			<div id="quiz">
 				<div class="space"></div>
 			</div>
 		</div>
 		
-		
-		
+		<!-- Include title of current page, as well as short description on what it contains. -->
 		<h1>What Kind Of Dog Are You?</h1>
 		<p>Do you ever wonder what kind of dog breed you'd be if you were a dog? Take this quiz and find out!</p>
 		
-		
+		<!-- Add all pertinent quiz questions here & check results button here... -->
+		<!-- Note that quiz questions are from https://www.playbuzz.com/toddbriscoelittlethings10/what-dog-breed-are-you -->
+		<!-- MC question making with reference to https://www.youtube.com/watch?v=C7NsIRhoWuE&t=435s -->
 		<section id="showcase">
 			<div class="textcontain">
-
-			<div class="info">
+				<form class="info" id="info" name="info">
 				
-				<h3>1. Which house would you rather live in?</h3>
-					<input type="radio" id="mc" name = "house">Mansion</br>
-					<input type="radio" id="mc" name = "house">Villa</br>
-					<input type="radio" id="mc" name = "house">Ranch</br>
-					<input type="radio" id="mc" name = "house">Tree House</br>
-					<input type="radio" id="mc" name = "house">Igloo</br>
-					<input type="radio" id="mc" name = "house">Beach House</br>
+					<h3>1. Which house would you rather live in?</h3>
+						<input type="radio" id="mc" name="q1" value="1">Mansion</br>
+						<input type="radio" id="mc" name="q1" value="2">Villa</br>
+						<input type="radio" id="mc" name="q1" value="3">Ranch</br>
+						<input type="radio" id="mc" name="q1" value="4">Tree House</br>
+						<input type="radio" id="mc" name="q1" value="5">Igloo</br>
+						<input type="radio" id="mc" name="q1" value="6">Beach House</br>
 				
-				<h3>2. What are you looking for in a best friend?</h3>
-					<input type="radio" id="mc" name = "friend">Someone who always has a snack in hand</br>
-					<input type="radio" id="mc" name = "friend">Someone who protects me and comforts me when I need it</br>
-					<input type="radio" id="mc" name = "friend">Someone who can be athletic and to go on adventures with</br>
-					<input type="radio" id="mc" name = "friend">Someone to do everything with together</br>
-					<input type="radio" id="mc" name = "friend">Someone who is loyal but knows to give you space when you need it</br>
+					<h3>2. What are you looking for in a best friend?</h3>
+						<input type="radio" id="mc" name="q2" value="1">Someone who always has a snack in hand</br>
+						<input type="radio" id="mc" name="q2" value="2">Someone who protects me and comforts me when I need it</br>
+						<input type="radio" id="mc" name="q2" value="3">Someone who can be athletic and to go on adventures with</br>
+						<input type="radio" id="mc" name="q2" value="4">Someone to do everything with together</br>
+						<input type="radio" id="mc" name="q2" value="5">Someone who is loyal but knows to give you space when you need it</br>
 				
-				<h3>3. If you could visit any time in history, which would you like to visit?</h3>
-					<input type="radio" id="mc" name = "time">Victorian Era</br>
-					<input type="radio" id="mc" name = "time">La Belle Epoque</br>
-					<input type="radio" id="mc" name = "time">Egyptian Pyramid Building Era</br>
-					<input type="radio" id="mc" name = "time">Discovery of America</br>
-					<input type="radio" id="mc" name = "time">Roman Empire or Ancient Greece</br>
-					<input type="radio" id="mc" name = "time">1920s Gangsters and Bootleggers</br>
-				
-				<!--
-				<h3>4. It's Saturday morning. What are you doing?</h3>
-					<input type="radio" id="mc">Sleeping in</br>
-					<input type="radio" id="mc">Getting my hair cut</br>
-					<input type="radio" id="mc">Looking for a cute outfit</br>
-					<input type="radio" id="mc">Running errands</br>
-					<input type="radio" id="mc">Doing something active</br>
-					<input type="radio" id="mc">Working or studying</br>
-				
-				
-				<h3>5. How would you describe your personal hair maintenance?</h3>
-					<input type="radio" id="mc">I spend hours getting my hair ready every morning</br>
-					<input type="radio" id="mc">I just do what I have to do</br>
-					<input type="radio" id="mc">I really don't care about my hair</br>
-				
-				<h3>6. How would your friends describe you?</h3>
-					<input type="radio" id="mc">Great sense of humour</br>
-					<input type="radio" id="mc">Someone shy</br>
-					<input type="radio" id="mc">Kind and helpful</br>
-					<input type="radio" id="mc">Loyal</br>
-					<input type="radio" id="mc">Smart</br>
-					<input type="radio" id="mc">Clingy</br>
+					<h3>3. If you could visit any time in history, which would you like to visit?</h3>
+						<input type="radio" id="mc" name="q3" value="1">Victorian Era</br>
+						<input type="radio" id="mc" name="q3" value="2">La Belle Epoque</br>
+						<input type="radio" id="mc" name="q3" value="3">Egyptian Pyramid Building Era</br>
+						<input type="radio" id="mc" name="q3" value="4">Discovery of America</br>
+						<input type="radio" id="mc" name="q3" value="5">Roman Empire or Ancient Greece</br>
+						<input type="radio" id="mc" name="q3" value="6">1920s Gangsters and Bootleggers</br>
 					
-				<h3>7. If you could have any other job, what would you want?</h3>
-					<input type="radio" id="mc">Open my own business</br>
-					<input type="radio" id="mc">Actor or actress</br>
-					<input type="radio" id="mc">Software engineer</br>
-					<input type="radio" id="mc">Professional athlete</br>
-					<input type="radio" id="mc">Doctor</br>
-					<input type="radio" id="mc">Join the armed forces</br>
-					-->
-					<button id="results" class="results" onclick="check();">Check Results</button>
+					<!-- Check results button here... -->
+					<button href="#" id="results" class="results" onclick="check();return false;">Check Results</button>
 				
-			</div>
+				</form>
 			</div>
 		</section>
 		
@@ -116,19 +89,20 @@
 				<div id="close" class="close">+</div>
 				<img src="./images/headerdog1_pose2.png" alt="">
 				
-				
 				<h1>Poodle</h1>
 				
 				<p>It's not your fault you're gorgeous, smart, and well-disciplined!</p>
 				<p>You like to excel at what you do, and you're proud of that fact. People may think your pride makes you a snob, but that's far from the fact. </p>
 				<p>You love people, but it takes you a while to warm up to strangers.</p>
 				
-				<button class="button" onclick="location.href='./quizzes.html'">Return to Quizzes</button>
+				<!-- Add important return to quizzes and retake quiz buttons here... -->
+				<!-- <button class="button" onclick="location.href='./quizzes.html'">&larr; Return to Quizzes</button> -->
+				<button class="button" onclick="location.href='./quiz.html'">&#8635; Retake Quiz</button>
 				
 			</div>
 		</div>
 		
-		
+		<!-- Footer Section -->
 		<footer>
 			<div id="foot">
 				<ul>
@@ -138,31 +112,32 @@
 					<li><a href="https://www.instagram.com/"><span>Instagram</span></a></li>
 					<!--<button>Search</button>-->
 				</ul>
-		</div>
+			</div>
 		</footer>
 		
+		<!-- JavaScript important functions for pop up of results to be displayed and to be closed here... -->
 		<script>
 		
-		
+		function check() {
+			var q1 = document.info.q1.value;
+			var q2 = document.info.q2.value;
+			var q3 = document.info.q3.value;
+			
+			if((q1=="1" || q1=="2" || q1=="3" || q1=="4" || q1=="5" || q1=="6") && (q2=="1" || q2=="2" || q2=="3" || q2=="4" || q2=="5") && (q3=="1" || q3=="2" || q3=="3" || q3=="4" || q3=="5" || q3=="6")) {
+				document.querySelector('.bg-modal').style.display = 'flex';
+				window.scrollTo(500, 340);
+			}
+			
+			else {
+				alert("Please make sure to answer all questions, in order to obtain your results.");
+			}
+		}
 		
 		document.querySelector('.close').addEventListener('click', function(){
 			document.querySelector('.bg-modal').style.display = 'none';
 		});
 
-		function check(){
-			var radios = document.getElementsByName("name");
-	   
-			for (var i = 0, len = radios.length; i < len; i++) {
-				 if (radios[i].checked) {
-					 return true;
-					 document.getElementById('results').addEventListener('click', function() {
-					document.querySelector('.bg-modal').style.display = 'flex';
-					});
-				 }
-			}
-	   
-			return false;
-		}
+		
 
 		</script>
 		
