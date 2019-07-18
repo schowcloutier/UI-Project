@@ -1,51 +1,77 @@
 <!DOCTYPE html>
 
+<!-- This is the About Us page implementation which gives users an insight into our vision,
+motivation, and how to "contact" our team. -->
+
 <html>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
 		<meta name="author" content="Qurt ul ain Sultan, Dounia Mansouri & Sacha Chow-Cloutier">
 		<title>About Us Page</title>
-		<link rel="stylesheet" href="">
-		<script></script>
+		<link rel="stylesheet" href="about_us.css">
+		<link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
 	</head>
 	
 	<body>
+		<!-- Header Section -->
 		<header>
-		
-		<div class="container">
-			<div id="logo">
-				<!-- insert logo here -->
-				<h1>petïfy</h1>
+			<div class="container">
+				<div id="about">
+					<div class="header_pic"></div>
+				</div>
+				<!-- Navigation Section -->
+				<div id="nav">
+					<ul>
+						<!-- All top pages are inactive in header but the about us page is highlighted in the footer.
+						The colour of the About Us included in the footer is changed in the about_us.css file. -->
+						<li class="inactive"><a href="./home.html"><span>Home</span></a></li>
+						<li class="inactive"><a href="./dog_types.html"><span>Dog Types</span></a></li>
+						<li class="inactive"><a href="./care.html"><span>Taking Care</span></a></li>
+						<li class="inactive"><a href="./quizzes.html"><span>Quizzes</span></a></li>
+						<li class="inactive"><a href="./adopt.html"><span>Adopt</span></a></li>
+					</ul>
+				</div>
 			</div>
-			<nav>
-				<ul>
-					<li><a href="./home.html">Home</a></li>
-					<li><a href="">Dog Types</a></li>
-					<li><a href="">Taking Care</a></li>
-					<li><a href="">Quizzes</a></li>
-					<li><a href="">Adopt</a></li>
-					<button>Search</button>
-				</ul>
-			</nav>
 		</header>
 		
+		<!-- Include image along with the title of current page, as well as short description on what it contains. -->
+		<div class="parallax-about">
+			<div id="about">
+				<div class="head_text">
+					<h1>About Us</h1>
+					<p class="bigger">Are you curious about our website and want to directly contact us?</p>
+					<p class="smaller">Learn more about our doggy mission and how to contact us down below.</p>
+				</div>
+			</div>
+		</div>
 		
-		<h1>About us</h1>
-		<p><p>
+		<!-- Add all pertinent page information here... -->
+		<section id="showcase">
+			<div class="textcontain">
+				<div class="info">
+					<h2>Who We Are</h2>
+					<h3>Petify believes in providing our users the ultimate and user-friendly experience. We have combined our website to include a wide variety of information about dogs and included interactive components to engage our audience.</h3>
+					<h2>Contact</h2>
+					<h3>You can get into contact with our amazing team at 1-800-333-999 or email us at petify@petify.com</h3>
+				</div>
+				
+				<!-- Add dog image #1 here. -->
+				<div class="header_dog_1"></div>
+			</div>
+		</section>
 		
-		
+		<!-- Footer Section -->
 		<footer>
-			<!-- insert about us section and links to share here -->
-			<ul>
-				<li><a href="./about_us.html">About Us</a></li>
-			</ul>
-			<p>Copyright &copy; 2019</p>
+			<div id="foot">
+				<ul>
+					<li><a href="./about_us.html" id="abouts" class="abouts">About Us</a></li>
+					<li><a href="https://www.facebook.com/"><span>Facebook</span></a></li>
+					<li><a href="https://www.twitter.com/"><span>Twitter</span></a></li>
+					<li><a href="https://www.instagram.com/"><span>Instagram</span></a></li>
+				</ul>
+			</div>
 		</footer>
-		
-		<script>
-			<!-- ...  -->
-		</script>
 		
 	</body>
 	

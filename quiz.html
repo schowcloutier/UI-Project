@@ -49,27 +49,27 @@
 			<div class="info">
 				
 				<h3>1. Which house would you rather live in?</h3>
-					<input type="radio" id="mc">Mansion</br>
-					<input type="radio" id="mc">Villa</br>
-					<input type="radio" id="mc">Ranch</br>
-					<input type="radio" id="mc">Tree House</br>
-					<input type="radio" id="mc">Igloo</br>
-					<input type="radio" id="mc">Beach House</br>
+					<input type="radio" id="mc" name = "house">Mansion</br>
+					<input type="radio" id="mc" name = "house">Villa</br>
+					<input type="radio" id="mc" name = "house">Ranch</br>
+					<input type="radio" id="mc" name = "house">Tree House</br>
+					<input type="radio" id="mc" name = "house">Igloo</br>
+					<input type="radio" id="mc" name = "house">Beach House</br>
 				
 				<h3>2. What are you looking for in a best friend?</h3>
-					<input type="radio" id="mc">Someone who always has a snack in hand</br>
-					<input type="radio" id="mc">Someone who protects me and comforts me when I need it</br>
-					<input type="radio" id="mc">Someone who can be athletic and to go on adventures with</br>
-					<input type="radio" id="mc">Someone to do everything with together</br>
-					<input type="radio" id="mc">Someone who is loyal but knows to give you space when you need it</br>
+					<input type="radio" id="mc" name = "friend">Someone who always has a snack in hand</br>
+					<input type="radio" id="mc" name = "friend">Someone who protects me and comforts me when I need it</br>
+					<input type="radio" id="mc" name = "friend">Someone who can be athletic and to go on adventures with</br>
+					<input type="radio" id="mc" name = "friend">Someone to do everything with together</br>
+					<input type="radio" id="mc" name = "friend">Someone who is loyal but knows to give you space when you need it</br>
 				
 				<h3>3. If you could visit any time in history, which would you like to visit?</h3>
-					<input type="radio" id="mc">Victorian Era</br>
-					<input type="radio" id="mc">La Belle Epoque</br>
-					<input type="radio" id="mc">Egyptian Pyramid Building Era</br>
-					<input type="radio" id="mc">Discovery of America</br>
-					<input type="radio" id="mc">Roman Empire or Ancient Greece</br>
-					<input type="radio" id="mc">1920s Gangsters and Bootleggers</br>
+					<input type="radio" id="mc" name = "time">Victorian Era</br>
+					<input type="radio" id="mc" name = "time">La Belle Epoque</br>
+					<input type="radio" id="mc" name = "time">Egyptian Pyramid Building Era</br>
+					<input type="radio" id="mc" name = "time">Discovery of America</br>
+					<input type="radio" id="mc" name = "time">Roman Empire or Ancient Greece</br>
+					<input type="radio" id="mc" name = "time">1920s Gangsters and Bootleggers</br>
 				
 				<!--
 				<h3>4. It's Saturday morning. What are you doing?</h3>
@@ -102,7 +102,7 @@
 					<input type="radio" id="mc">Doctor</br>
 					<input type="radio" id="mc">Join the armed forces</br>
 					-->
-					<button href="#" id="results" class="results">Check Results</button>
+					<button id="results" class="results" onclick="check();">Check Results</button>
 				
 			</div>
 			</div>
@@ -143,13 +143,26 @@
 		
 		<script>
 		
-		document.getElementById('results').addEventListener('click', function() {
-			document.querySelector('.bg-modal').style.display = 'flex';
-		});
+		
 		
 		document.querySelector('.close').addEventListener('click', function(){
 			document.querySelector('.bg-modal').style.display = 'none';
 		});
+
+		function check(){
+			var radios = document.getElementsByName("name");
+	   
+			for (var i = 0, len = radios.length; i < len; i++) {
+				 if (radios[i].checked) {
+					 return true;
+					 document.getElementById('results').addEventListener('click', function() {
+					document.querySelector('.bg-modal').style.display = 'flex';
+					});
+				 }
+			}
+	   
+			return false;
+		}
 
 		</script>
 		
