@@ -11,12 +11,12 @@ body, html {
     border-radius: 4px;
     background-color: rbg(255,255,255);
 }
-#dogs {
+#quizzes {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#quizzes {
+#quiz {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,12 +30,7 @@ body, html {
     background-size: contain;
 }
 
-
-#dogs {
-    display: flex;
-    justify-content: center;
-}
-.parallax-2 {
+.parallax-quizzes {
     position: relative;
     background-attachment: fixed;
     background-position: 50% 50%;
@@ -43,7 +38,25 @@ body, html {
     background-size: 100%;
     min-height: 70%;
     background-image: url("images/quiz.jpg")
-  }
+}
+
+.parallax-quiz{
+    position: relative;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    max-height: 60%;
+    background-color: #e19d36;
+}
+.space{
+    height: 1px;
+    width: 360px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 1px;
+}
+
 .head_text {
     width: 500px;
     margin-right: auto;
@@ -66,46 +79,6 @@ body, html {
     color: rgb(255, 255, 255);
 }
 
-
-.parallax-1{
-    position: relative;
-    background-attachment: fixed;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    max-height: 60%;
-    background-color: #e19d36;
-  }
-h1 {
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 20px;
-	color: #848484;
-}
-h2 {
-    text-align: left;
-    margin-top: 40px;
-    margin-bottom: 40px;
-	color: #848484;
-}
-a {
-	text-decoration: none;
-	color: #e19d36;
-}
-a:hover {
-	color: black;
-}
-h3 {
-    text-align: left;
-    margin-top: 40px;
-    margin-bottom: 40px;
-	font-weight: 400;
-}
-p {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 0px;
-}
 #nav {
     height: 60px; 
     padding-left: 50px;
@@ -168,16 +141,39 @@ li {
 
 /* Header done */
 
-.space{
-    height: 1px;
-    width: 360px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-top: 1px;
+
+/* page info contents formatting */
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+	color: #e19d36;
 }
-.space:hover {
-    background-repeat: no-repeat;
-    background-size: contain;
+h2 {
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 40px;
+	color: #848484;
+}
+h3 {
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 40px;
+	font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+	color: #e19d36;
+}
+a:hover {
+	color: #afd146;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 
 .header_dog_2 {
@@ -209,11 +205,16 @@ li {
     font-size: 18px;
 }
 
+/* mc question formatting here */
+
 #mc {
 	margin-left: 20px;
 	margin-right:15px;
 	margin-bottom: 15px;
 }
+
+/* pop up for quiz results */
+/* modal created with reference to https://www.youtube.com/watch?v=yafNKsqZ4cA&t=53s */
 
 img{
 	margin-top:20px;
@@ -223,8 +224,8 @@ img{
 
 .bg-modal{
 	width:100%;
-	height:210.5%;
-	background-color: rgba(0, 0, 0, 0.7);
+	height:213.5%;
+	background-color: rgba(0, 0, 0, 0.42);
 	position: absolute;
 	top:0;
 	justify-content:center;
@@ -252,6 +253,8 @@ img{
 	cursor: pointer;
 }
 
+/* button formatting */
+
 button{
 	margin-top: 30px;
 	background-color: white;
@@ -275,7 +278,7 @@ button:hover{
 	margin-left:500px;
 }
 
-/* footer */
+/* Footer part */
 
 #foot {
     height: 60px; 
@@ -283,21 +286,22 @@ button:hover{
     padding-right: 50px;
     background-color: rgb(255,255,255);
     margin-left: 20%;
-  
-  }
-  #foot ul {
+}
+#foot ul {
     border-radius: 4px;
     overflow: hidden;
-  }
-  #foot li {
+}
+#foot li {
     float: left;
     width: 20%;
-  }
-  
-  #foot a {
+}
+
+#foot a {
   text-decoration: none;
   color: #afd146;
-  }
-  #foot a:hover {
+}
+#foot a:hover {
   color:  #e19d36;
-  }
+}
+
+/* Footer done */
