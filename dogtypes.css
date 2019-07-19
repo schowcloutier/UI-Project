@@ -6,11 +6,13 @@ body, html {
 }
 
 /* Header part */
+
 .container {
     max-width: 100%;
     border-radius: 4px;
     background-color: rgb(255,255,255);
 }
+
 .header_pic {
     height: 80px;
     width: 500px;
@@ -19,10 +21,12 @@ body, html {
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 #dogs {
     display: flex;
     justify-content: center;
 }
+
 .parallax-1 {
     position: relative;
     background-attachment: fixed;
@@ -31,42 +35,51 @@ body, html {
     background-size: 100%;
     min-height: 70%;
     background-image: url("images/FullSizeRender.png")
-  }
+}
+
 .head_text {
     width: 500px;
     margin-right: auto;
     margin-left:auto;
     padding-top: 100px;
 }
+
 .head_text h1 {
     color: white;
 }
+
 .bigger {
     font-size: 20px;
     color: white;
 }
+
 .smaller {
     font-size: 18px;
     color: rgb(255, 255, 255);
 }
+
 #nav {
     height: 60px; 
     padding-left: 50px;
     padding-right: 50px;
     background-color: rgb(255,255,255);
 }
+
 #nav ul {
     border-radius: 4px;
     overflow: hidden;
 }
+
 #nav li {
     float: left;
     width: 20%;
 }
+
 #nav li:hover a::before {
     right: 0;
     left: 0;
 }
+
 #nav .inactive a {
     color: #848484;
     font-size: 16px;
@@ -77,6 +90,7 @@ body, html {
     position: relative;
     transition: all 0.3s ease;
 }
+
 #nav .active a {
     color: #afd146;
     font-size: 16px;
@@ -87,9 +101,11 @@ body, html {
     position: relative;
     transition: all 0.3s ease;
 }
+
 #nav a:hover {
     color:  #e19d36;
 }
+
 #nav a::before {
     content: "";
     transition: all 0.2s ease-in-out;
@@ -100,10 +116,12 @@ body, html {
     height: 2px;
     background-color: #e19d36;
 }
+
 #nav a:hover::before {
     right: 0;
     left: 0;
 } 
+
 li {
     list-style: none;
 }
@@ -111,11 +129,12 @@ li {
 /* Header done */
 
 
-/* gallery */
+/* gallery  https://www.w3schools.com/Css/css_image_gallery.asp */
 #showcase {
     background-color:  rgb(255, 255, 255);
     min-height: 100%;
 }
+
 .textcontain {
     display: block;
     background-color: white;
@@ -124,6 +143,7 @@ li {
     margin-left: 100px;
     margin-right: auto;
 }
+
 div.gallery {
     margin: 10px;
     border: 4px solid white;
@@ -132,6 +152,7 @@ div.gallery {
     width: 250px;
     transition: all 0.3s ease;
 }
+
 div.gallery_top{
     margin: 10px;
     margin-top: 50px;
@@ -140,6 +161,7 @@ div.gallery_top{
     width: 250px;
     transition: all 0.3s ease;
 }
+
 div.gallery_rowstart {
     margin: 10px;
     margin-left:80px;
@@ -148,6 +170,7 @@ div.gallery_rowstart {
     width: 250px;
     transition: all 0.3s ease;
 }
+
 div.gallery_rowstart_top {
     margin: 10px;
     margin-top: 50px;
@@ -157,18 +180,18 @@ div.gallery_rowstart_top {
     width: 250px;
     transition: all 0.3s ease;
 }
-  
-  div.gallery:hover, div.gallery_top:hover, div.gallery_rowstart:hover, div.gallery_rowstart_top:hover {
+
+div.gallery:hover, div.gallery_top:hover, div.gallery_rowstart:hover, div.gallery_rowstart_top:hover {
     border: 4px solid #e19d36;
     border-radius: 4px;
-  }
+}
   
-  div.desc {
+div.desc {
     padding: 15px;
     text-align: center;
-  }
+}
 
-  .img {
+.img {
     position: relative;
     float: left;
     width:  250px;
@@ -181,6 +204,7 @@ div.gallery_rowstart_top {
 }
 
 
+/* popups for every dog - bg container */
 .afghan-hound-modal, .basset-hound-modal, .beagle-modal, .bloodhound-modal, .border-collie-modal, .boston-terrier-modal,
 .bulldog-modal, .chihuahua-modal, .dachshund-modal, .dalmatian-modal, .golden-retriever-modal, .greyhound-modal,
 .maltese-modal, .pekingnese-modal, .poodle-modal, .shih-tzu-modal{
@@ -192,8 +216,9 @@ div.gallery_rowstart_top {
 	justify-content:center;
 	align-items:center;
 	display: none;
-	
 }
+
+/* popup content */
 .modal-content{
 	width:500px;
 	height:780px;
@@ -213,6 +238,7 @@ div.gallery_rowstart_top {
     color: #afd146;
 }
 
+/* X button to close the popup */
 .afghan-close, .basset-close, .beagle-close, .bloodhound-close, .border-collie-close, .boston-terrier-close, .bulldog-close,
 .chihuahua-close, .dachshund-close, .dalmatian-close, .golden-retriever-close, .greyhound-close, .maltese-close,
 .pekingnese-close, .poodle-close, .shih-tzu-close {
@@ -239,10 +265,12 @@ div.gallery_rowstart_top {
     margin-left: 20%;
 
 }
+
 #foot ul {
     border-radius: 4px;
     overflow: hidden;
 }
+
 #foot li {
     float: left;
     width: 20%;
@@ -252,6 +280,9 @@ div.gallery_rowstart_top {
 	text-decoration: none;
 	color: #afd146;
 }
+
 #foot a:hover {
 	color:  #e19d36;
 }
+
+/* footer done */

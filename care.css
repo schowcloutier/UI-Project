@@ -6,15 +6,18 @@ body, html {
 }
 
 /* Header part */
+
 .container {
   max-width: 100%;
   border-radius: 4px;
   background-color: rbg(255,255,255);
 }
+
 #dogs {
   display: flex;
   justify-content: center;
 }
+
 .header_pic {
   height: 80px;
   width: 500px;
@@ -23,6 +26,7 @@ body, html {
   background-repeat: no-repeat;
   background-size: contain;
 }
+
 .parallax-1{
   position: relative;
   background-attachment: fixed;
@@ -38,60 +42,71 @@ body, html {
   margin-right: 30px;
   margin-top: 50px;
 }
+
 .head_text h1 {
   color: white;
 }
+
 .head_text p {
   color: white;
 }
+
 .bigger {
   font-size: 20px;
 }
+
 .smaller {
   font-size: 18px;
 }
+
 #nav {
   height: 60px; 
   padding-left: 50px;
   padding-right: 50px;
   background-color: rgb(255,255,255);
 }
+
 #nav ul {
   border-radius: 4px;
   overflow: hidden;
-
 }
+
 #nav li {
   float: left;
   width: 20%;
 }
+
 #nav li:hover a::before {
   right: 0;
   left: 0;
 }
+
 #nav .inactive a {
-color: #848484;
-font-size: 16px;
-text-decoration: none;
-text-align: center;
-padding: 10px 0;
-display: block;
-position: relative;
-transition: all 0.3s ease;
+  color: #848484;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 0;
+  display: block;
+  position: relative;
+  transition: all 0.3s ease;
 }
+
 #nav .active a {
-color: #afd146;
-font-size: 16px;
-text-decoration: none;
-text-align: center;
-padding: 10px 0;
-display: block;
-position: relative;
-transition: all 0.3s ease;
+  color: #afd146;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 0;
+  display: block;
+  position: relative;
+  transition: all 0.3s ease;
 }
+
 #nav a:hover {
   color:  #e19d36;
 }
+
 #nav a::before {
   content: "";
   transition: all 0.2s ease-in-out;
@@ -102,39 +117,30 @@ transition: all 0.3s ease;
   height: 2px;
   background-color: #e19d36;
 }
+
 #nav a:hover::before {
   right: 0;
   left: 0;
 } 
+
 li {
   list-style: none;
 }
 
-/* The hero image */
+
 .hero-image {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/hero.jpg");
-  
-    /* Set a specific height */
     height: 70%;
-  
-    /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-
-
-        position: relative;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: 100%;
-       
-        
-    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/hero.jpg");
+    position: relative;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
   
-  /* Place text in the middle of the image */
   .hero-text {
     text-align: center;
     position: absolute;
@@ -144,14 +150,10 @@ li {
     color: white;
   }
   
-  
-
 
 /* Text and rounded images */
 
-
   .text1 {
-
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     border-radius: 25px;
     padding: 20px; 
@@ -159,21 +161,15 @@ li {
     height: 100px;
     margin-left: 20%;
     margin-top: 4%;
-   
     font-family:'DM sans', sans-serif;
     color: #777;
     font-size: 30px; 
     text-align: left;
     cursor: pointer;
-    
-
-
   }
 
   .text1:hover {
     background-color: rgb(211, 210, 210);
-
-
   }
 
   .content1 {
@@ -187,13 +183,9 @@ li {
     font-family:'DM sans', sans-serif;
     overflow: hidden;
     display: none;
-
   }
 
-
-
   .text2 {
-
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     border-radius: 25px;
     padding: 20px; 
@@ -206,17 +198,13 @@ li {
     font-size: 30px; 
     text-align: left;
     cursor: pointer;
-
   }
 
    .text2:hover {
     background-color: rgb(211, 210, 210);
-
-
   }
 
   .content2 {
-    
     border-radius: 25px;
     padding: 20px; 
     width: 50%;
@@ -226,12 +214,9 @@ li {
     font-family:'DM sans', sans-serif;
     overflow: hidden;
     display: none;
-
   }
 
-
   .text3 {
-
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     border-radius: 25px;
     padding: 20px; 
@@ -244,17 +229,13 @@ li {
     font-size: 30px; 
     text-align: left;
     cursor: pointer;
-
   }
 
    .text3:hover {
     background-color: rgb(211, 210, 210);
-
-
   }
 
   .content3 {
-    
     border-radius: 25px;
     padding: 20px; 
     width: 50%;
@@ -264,12 +245,10 @@ li {
     font-family:'DM sans', sans-serif;
     overflow: hidden;
     display: none;
-
   }
 
 
   .text4 {
-
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     border-radius: 25px;
     padding: 20px; 
@@ -277,24 +256,18 @@ li {
     height: 100px;
     margin-left: 20%;
     margin-top: 4%;
-
     font-family:'DM sans', sans-serif;
     color: #777;
     font-size: 30px; 
     text-align: left;
     cursor: pointer;
-
   }
 
    .text4:hover {
     background-color: rgb(211, 210, 210);
-    
-
-
   }
 
   .content4 {
-    
     border-radius: 25px;
     padding: 20px; 
     width: 50%;
@@ -304,7 +277,6 @@ li {
     font-family:'DM sans', sans-serif;
     overflow: hidden;
     display: none;
-
   }
 
  
@@ -318,7 +290,6 @@ li {
   
   .row > .column {
     padding: 0 8px;
-
   }
   
   .row:after {
@@ -449,14 +420,9 @@ li {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   
-  
-
-
-
-
-
 
 /* footer */
+
 #foot {
   margin-top: 20%;
   height: 100px; 
@@ -466,10 +432,12 @@ li {
   margin-left: 20%;
 
 }
+
 #foot ul {
   border-radius: 4px;
   overflow: hidden;
 }
+
 #foot li {
   float: left;
   width: 20%;
@@ -479,6 +447,9 @@ a {
 text-decoration: none;
 color: #afd146;
 }
+
 a:hover {
 color: black;
 }
+
+/* footer done */

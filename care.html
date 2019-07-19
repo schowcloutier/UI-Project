@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 
+<!-- This is the Care page implementation which provides users with information on how to take
+	care of their dog. --> 
+
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -12,12 +15,14 @@
 	</head>
 	
 	<body>
+		<!-- Header Section -->
 		<header>
-		
+			<!-- Picture for our header -->
 			<div class="container">
 				<div id="dogs">
 					<div class="header_pic"></div>
 				</div>
+				<!-- Navigation Section -->
 				<div id="nav">
 						<ul>
 							<li class="inactive"><a href="./home.html"><span>Home</span></a></li>
@@ -30,17 +35,17 @@
 			</div>
 		</header>
 
+		<!-- Include image along with the title of current page, as well as short description on what it contains. -->
 		<div class="hero-image">
 				<div class="hero-text">
-
 				  <h1>Taking care</h1>
 				  <h2> Tips on how to take good care of your dog</h2>
-				  
 				</div>
 		</div>
 
-			<!-- subtitle -->
-<div class="body-image">
+	
+		<!-- Row of dog images - modal (popup) when clicked -->
+		<div class="body-image">
 			<div class="row">
 					<div class="column">
 					  <img src="./images/dog.jpg" style="width:100%"  onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
@@ -51,9 +56,11 @@
 					<div class="column">
 					  <img src="./images/dog1.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
 					</div>
-				
 			</div>
 				  
+
+			<!-- Dog popups also open to a slideshow -->
+
 			<div id="myModal" class="modal">
 					<span class="close cursor" onclick="closeModal()">&times;</span>
 					<div class="modal-content">
@@ -98,44 +105,35 @@
 
 
 		
-		
-	
-
+		<!-- First information section: drops down to text -->
 		<button class = "text1" >Feeding</button>
-
 		<div class = "content1">
-				
-				<p>Puppies 8-12 weeks old need to be fed 4 meals a day. Meanwhile, puppies between 3-6 months old require 3 meals a day.</p> 
+			<p>Puppies 8-12 weeks old need to be fed 4 meals a day. Meanwhile, puppies between 3-6 months old require 3 meals a day.</p> 
 		</div>
 
+		<!-- Second information section: drops down to text -->
 		<button class = "text2">Exercice</button>
-
 		<div class = "content2">
-				
-				<p>Dogs need exercise to stay healthy. Individual exercise needs vary based on breed or breed mix, sex, age and level of health.</p>
+			<p>Dogs need exercise to stay healthy. Individual exercise needs vary based on breed or breed mix, sex, age and level of health.</p>
 		</div>	
 		
-
+		<!-- Third information section: drops down to text -->
 		<button class = "text3">Grooming</button>
-
 		<div class = "content3">
-				
-				<p>Keep your dog clean and reduce shedding by brushing. Check for fleas and ticks daily during warm weather. Most dogs don't need to be bathed more than a few times a year.</p>
+			<p>Keep your dog clean and reduce shedding by brushing. Check for fleas and ticks daily during warm weather. Most dogs don't need to be bathed more than a few times a year.</p>
 		</div>
 
+		<!-- Fourth information section: drops down to text -->
 		<button class = "text4">Handling</button>
-
 		<div class = "content4">
-		
-		
-				<p>To carry a puppy or small dog, place one hand under the dog's chest, with either your forearm or other hand supporting the hind legs and rump. Never attempt to lift or grab your puppy or small dog by the forelegs, tail or back of the neck. If you do have to lift a large dog, lift from the underside, supporting his chest with one arm and his rear end with the other.</p>
+			<p>To carry a puppy or small dog, place one hand under the dog's chest, with either your forearm or other hand supporting the hind legs and rump. Never attempt to lift or grab your puppy or small dog by the forelegs, tail or back of the neck. If you do have to lift a large dog, lift from the underside, supporting his chest with one arm and his rear end with the other.</p>
 		</div>
 
 		
 
 		
 
-		
+		<!-- Footer section -->
 		<footer>
 			<div id="foot">
 				<ul>
@@ -143,126 +141,109 @@
 					<li><a href="https://www.facebook.com/"><span>Facebook</span></a></li>
 					<li><a href="https://www.twitter.com/"><span>Twitter</span></a></li>
 					<li><a href="https://www.instagram.com/"><span>Instagram</span></a></li>
-					<!--<button>Search</button>-->
 				</ul>
 		</div>
 		</footer>
 		
-		<script>
+		<script> //Script for the dropdown text for each information section
 
-			
-				var coll = document.getElementsByClassName("text1");
-				var i;
-
-				for (i = 0; i < coll.length; i++) {
-					coll[i].addEventListener("click", function() {
-						this.classList.toggle("active");
-						var content = this.nextElementSibling;
-						if (content.style.display === "block") {
+			/* First information section */
+			var coll = document.getElementsByClassName("text1");
+			var i;
+			for (i = 0; i < coll.length; i++) {
+				coll[i].addEventListener("click", function() {
+					this.classList.toggle("active");
+					var content = this.nextElementSibling;
+					if (content.style.display === "block") {
 						content.style.display = "none";
-						} else {
+					} else {
 						content.style.display = "block";
 						}
-					});
-				}
+				});
+			}
 
-				var coll = document.getElementsByClassName("text2");
-				var i;
-
-				for (i = 0; i < coll.length; i++) {
-					coll[i].addEventListener("click", function() {
-						this.classList.toggle("active");
-						var content = this.nextElementSibling;
-						if (content.style.display === "block") {
+			/* Second information section */
+			var coll = document.getElementsByClassName("text2");
+			var i;
+			for (i = 0; i < coll.length; i++) {
+				coll[i].addEventListener("click", function() {
+					this.classList.toggle("active");
+					var content = this.nextElementSibling;
+					if (content.style.display === "block") {
 						content.style.display = "none";
-						} else {
+					} else {
 						content.style.display = "block";
-						}
-					});
-				}
+					}
+				});
+			}
 
-				var coll = document.getElementsByClassName("text3");
-				var i;
-
-				for (i = 0; i < coll.length; i++) {
-					coll[i].addEventListener("click", function() {
-						this.classList.toggle("active");
-						var content = this.nextElementSibling;
-						if (content.style.display === "block") {
+			/* Third information section */
+			var coll = document.getElementsByClassName("text3");
+			var i;
+			for (i = 0; i < coll.length; i++) {
+				coll[i].addEventListener("click", function() {
+					this.classList.toggle("active");
+					var content = this.nextElementSibling;
+					if (content.style.display === "block") {
 						content.style.display = "none";
-						} else {
+					} else {
 						content.style.display = "block";
-						}
-					});
-				}
+					}
+				});
+			}
 
-				var coll = document.getElementsByClassName("text4");
-				var i;
-
-				for (i = 0; i < coll.length; i++) {
-					coll[i].addEventListener("click", function() {
-						this.classList.toggle("active");
-						var content = this.nextElementSibling;
-						if (content.style.display === "block") {
+			/* Fourth information section */
+			var coll = document.getElementsByClassName("text4");
+			var i;
+			for (i = 0; i < coll.length; i++) {
+				coll[i].addEventListener("click", function() {
+					this.classList.toggle("active");
+					var content = this.nextElementSibling;
+					if (content.style.display === "block") {
 						content.style.display = "none";
-						} else {
+					} else {
 						content.style.display = "block";
-						}
-					});
-				}
+					}
+				});
+			}
 
+			/* Modal and slideshow functions */
+			function openModal() {
+				document.getElementById("myModal").style.display = "block";
+			}
+			function closeModal() {
+				document.getElementById("myModal").style.display = "none";
+			}
 
-				function openModal() {
-					document.getElementById("myModal").style.display = "block";
-				}
+			var slideIndex = 1;
+			showSlides(slideIndex);
 
-				function closeModal() {
-					document.getElementById("myModal").style.display = "none";
-				}
+			function plusSlides(n) {
+				showSlides(slideIndex += n);
+			}
 
-				var slideIndex = 1;
-				showSlides(slideIndex);
+			function currentSlide(n) {
+				showSlides(slideIndex = n);
+			}
 
-				function plusSlides(n) {
-					showSlides(slideIndex += n);
-				}
-
-				function currentSlide(n) {
-					showSlides(slideIndex = n);
-				}
-
-				function showSlides(n) {
-						var i;
-						var slides = document.getElementsByClassName("mySlides");
-						var dots = document.getElementsByClassName("demo");
-						var captionText = document.getElementById("caption");
-						if (n > slides.length) {slideIndex = 1}
+			function showSlides(n) {
+					var i;
+					var slides = document.getElementsByClassName("mySlides");
+					var dots = document.getElementsByClassName("demo");
+					var captionText = document.getElementById("caption");
+					if (n > slides.length) {slideIndex = 1}
 						if (n < 1) {slideIndex = slides.length}
-						for (i = 0; i < slides.length; i++) {
-							slides[i].style.display = "none";
-						}
-						for (i = 0; i < dots.length; i++) {
-							dots[i].className = dots[i].className.replace(" active", "");
-						}
+							for (i = 0; i < slides.length; i++) {
+								slides[i].style.display = "none";
+							}
+							for (i = 0; i < dots.length; i++) {
+								dots[i].className = dots[i].className.replace(" active", "");
+							}
 						slides[slideIndex-1].style.display = "block";
 						dots[slideIndex-1].className += " active";
 						captionText.innerHTML = dots[slideIndex-1].alt;
 				}
-
-				
-
-
-
-
-			
-
 		
-
-
-			
-
-
-			
 		</script>
 		
 	</body>

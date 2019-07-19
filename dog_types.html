@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 
+<!-- This is the Dog database page implementation which provides users with images of different types of dogs 
+and their basic information. --> 
+
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -12,12 +15,14 @@
 	</head>
 	
 	<body>
+		<!-- Header Section -->
 		<header>
-		
+			<!-- Picture for our header -->
 			<div class="container">
 				<div id="dogs">
 					<div class="header_pic"></div>
 				</div>
+				<!-- Navigation section -->
 				<div id="nav">
 						<ul>
 							<li class="inactive"><a href="./home.html"><span>Home</span></a></li>
@@ -25,13 +30,12 @@
 							<li class="inactive"><a href="./care.html"><span>Taking Care</span></a></li>
 							<li class="inactive"><a href="./quizzes.html"><span>Quizzes</span></a></li>
 							<li class="inactive"><a href="./adopt.html"><span>Adopt</span></a></li>
-							<!--<button>Search</button>-->
 						</ul>
 				</div>
 			</div>
-	
-			</header>
+		</header>
 
+		<!-- Include image along with the title of current page, as well as short description on what it contains. -->
 			<div class="parallax-1">
 				<div id="dogs">
 					<div class="head_text">
@@ -42,8 +46,17 @@
 				</div>
 			</div>
 
+
+		<!-- Gallery of dog pictures -->
 			<section id="showcase">
 					<div class="textcontain">
+						<!-- Each dog has its own div in order to have the correct modal displayed
+							gallery_rowstart_top: top row of the gallery has more padding-top, and the start of every
+												  row has a larger left margin
+							gallery_top: rest of the top row of the gallery
+							gallery_rowtstart: start of every row for the non-top rows
+							gallery: rest of the row elements
+						-->
 							<div class="gallery_rowstart_top">
 									<a id="afghan-hound" class="afghan-hound" href="#">
 										<div class="img" style="background-image:url('images/dog/Afghan-Hound.jpg');"></div>
@@ -145,6 +158,8 @@
 			</section>
 
 
+			<!-- Every modal for every dog
+			Information from: https://www.akc.org/dog-breeds/  -->
 			<div class="afghan-hound-modal">
 				<div class="modal-content">
 					<div id="afghan-close" class="afghan-close">+</div>
@@ -415,12 +430,10 @@
 							<h3>Exercise</h3>
 							<p>The Shih Tzu was bred to be a house companion. As such, they require minimal exercise. Short daily walks with their owner and indoor playtime will satisfy the activity needs of this small, short-legged companion.</p>
 						</div>
+				
 					</div>
 
-
-
-
-
+		<!-- Footer section -->
 		<footer>
 			<div id="foot">
 				<ul>
@@ -428,13 +441,13 @@
 					<li><a href="https://www.facebook.com/"><span>Facebook</span></a></li>
 					<li><a href="https://www.twitter.com/"><span>Twitter</span></a></li>
 					<li><a href="https://www.instagram.com/"><span>Instagram</span></a></li>
-					<!--<button>Search</button>-->
 				</ul>
 		</div>
 		</footer>
 		
 
-		<script>
+
+		<script> // script for the modal popups: opening and closing them
 
 		document.getElementById('afghan-hound').addEventListener('click', function() {
 			document.querySelector('.afghan-hound-modal').style.display = 'flex';
@@ -547,7 +560,6 @@
 		document.querySelector('.shih-tzu-close').addEventListener('click', function(){
 			document.querySelector('.shih-tzu-modal').style.display = 'none';
 		});
-		
 		
 		</script>
 		
